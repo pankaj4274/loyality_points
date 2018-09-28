@@ -1,0 +1,25 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-navbar></app-navbar>
+
+<mat-card>
+  <mat-card-title>
+    Point Value
+  </mat-card-title>
+  <mat-card-content>
+    <div class="example-container">
+
+      <mat-form-field>
+        <input disabled=true value=1 matInput placeholder=" Loyalty Point">
+      </mat-form-field>
+      <mat-form-field>
+        <input type=number matInput placeholder="Amount">
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <div>
+      <button mat-raised-button color="primary" (click)="openSnackBar()">Save</button>
+      <button mat-raised-button color="warn" routerLink="/home">Cancel</button>
+    </div>
+  </mat-card-actions>
+</mat-card>

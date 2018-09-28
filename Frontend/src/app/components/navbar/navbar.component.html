@@ -1,0 +1,23 @@
+<div>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <mat-icon class="example-icon">home</mat-icon>
+      <span>LOYALTY POINTS </span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>settings</mat-icon>
+      </button>
+      <!--Dropdown-->
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item  routerLink="/points">
+          <mat-icon>edit</mat-icon>
+          <span>Set Points</span>
+        </button>
+        <button mat-menu-item routerLink="/status">
+          <mat-icon>update</mat-icon>
+          <span>Manage Status</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>

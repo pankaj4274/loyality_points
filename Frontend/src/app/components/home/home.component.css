@@ -1,0 +1,33 @@
+.example-icon
+{
+    padding: 0 14px;
+}
+  
+.example-spacer 
+{
+    flex: 1 1 auto;
+}
+table
+{
+    width: 100%;
+}
+ .mat-icon.starBronze {
+    color: brown;
+  }
+  .mat-icon.starSilver {
+    color: silver;
+  }
+  .mat-icon.starGold {
+    color: gold;
+  }
+  .example-header{
+      display: inline;
+  }
+  .bg{
+      background-image: url('../../../assets/logo.jpg');
+      width: 200px;
+      height: 200px;
+  }
+  .highlight{
+    background: grey; /* green */
+  }

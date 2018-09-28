@@ -1,0 +1,38 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-navbar></app-navbar>
+<mat-card>
+  <mat-card-title>
+    Set Class Range
+  </mat-card-title>
+  <mat-card-content>
+    <div class="example-container">
+
+      <mat-form-field>
+        <mat-select placeholder="Choose Enrollment Class" [disabled] [(value)]="selected">
+          <mat-option value="Bronze">Bronze</mat-option>
+          <mat-option value="Silver">Silver</mat-option>
+          <mat-option value="Gold">Gold</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p>You selected:
+        <b>{{selected}}</b>
+      </p>
+
+      <mat-form-field>
+        <input type=number matInput placeholder="Minimum">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type=number matInput placeholder="Maximum">
+      </mat-form-field>
+
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div>
+      <button mat-raised-button color="primary" (click)="openSnackBar()">Save</button>
+      <button mat-raised-button color="warn" routerLink="/home">Cancel</button>
+    </div>
+  </mat-card-actions>
+</mat-card>

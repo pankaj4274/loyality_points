@@ -1,0 +1,47 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-navbar></app-navbar>
+
+<mat-card>
+  <mat-card-title>
+    Add Form
+  </mat-card-title>
+  <mat-card-content>
+    <div class="example-container">
+      <mat-form-field>
+
+        <input matInput placeholder="Name">
+      </mat-form-field>
+
+      <mat-form-field>
+
+        <input matInput type="number" placeholder="Phone">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" placeholder="Loyality Points">
+      </mat-form-field>
+      <mat-form-field>
+
+        <input matInput placeholder="State">
+      </mat-form-field>
+
+      <mat-form-field>
+
+        <input matInput placeholder="City">
+      </mat-form-field>
+
+      <mat-form-field>
+
+        <input matInput placeholder="Address">
+      </mat-form-field>
+
+
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <div>
+      <button mat-raised-button color="primary" (click)="openSnackBar()">Save</button>
+      <button mat-raised-button color="warn" routerLink="/home">Cancel</button>
+    </div>
+  </mat-card-actions>
+
+</mat-card>
