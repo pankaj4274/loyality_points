@@ -1,0 +1,14 @@
+.redeem_card{
+    width: 60%;
+    margin-left: 20%;
+    align-content: center;
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width:100%;
+    align-self: center;
+  }

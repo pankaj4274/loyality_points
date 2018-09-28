@@ -27,6 +27,7 @@ import { ClassrangeComponent } from './components/classrange/classrange.componen
 import { EditComponent } from './components/edit/edit.component';
 import { PointvalueComponent } from './components/pointvalue/pointvalue.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { RedeempointComponent } from './components/redeempoint/redeempoint.component';
 
 const routes:Routes=[
   {path:'home',component:HomeComponent},
@@ -46,7 +47,8 @@ const routes:Routes=[
     AddComponent,
     ClassrangeComponent,
     EditComponent,
-    PointvalueComponent
+    PointvalueComponent,
+    RedeempointComponent
   ],
   imports: [
     MatSnackBarModule,
