@@ -28,6 +28,7 @@ import { EditComponent } from './components/edit/edit.component';
 import { PointvalueComponent } from './components/pointvalue/pointvalue.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { RedeempointComponent } from './components/redeempoint/redeempoint.component';
+import { MainnavbarComponent } from './components/mainnavbar/mainnavbar.component';
 
 const routes:Routes=[
   {path:'home',component:HomeComponent},
@@ -35,6 +36,7 @@ const routes:Routes=[
   {path:'add',component:AddComponent},
   {path:'status',component:ClassrangeComponent},
   {path:'points',component:PointvalueComponent},
+  {path:'redeem',component:RedeempointComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'}
 ];
 
@@ -48,7 +50,8 @@ const routes:Routes=[
     ClassrangeComponent,
     EditComponent,
     PointvalueComponent,
-    RedeempointComponent
+    RedeempointComponent,
+    MainnavbarComponent
   ],
   imports: [
     MatSnackBarModule,

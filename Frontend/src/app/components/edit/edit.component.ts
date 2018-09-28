@@ -13,14 +13,21 @@ import {MatSnackBar} from '@angular/material';
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.css']
 })
-export class EditComponent {
 
+export class EditComponent {
+  formFlag=false;
+ 
+  btnText='edit';
  
   constructor(public snackBar: MatSnackBar) { }
   openSnackBar() {
+    this.formFlag=!this.formFlag;
+    this.btnText=this.formFlag?'edit':'save';
+    if(this.formFlag==true){
     this.snackBar.open("Saved Successfully", "X", {
       duration: 2000,
     });
+  }
   }
 
 }

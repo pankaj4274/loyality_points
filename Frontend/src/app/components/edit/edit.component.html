@@ -1,37 +1,37 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<app-navbar></app-navbar>
 
+<app-mainnavbar></app-mainnavbar>
 <mat-card>
   <mat-card-title>
-    EditForm
+    CUSTOMER DETAILS
   </mat-card-title>
   <mat-card-content>
-    <div class="example-container">
+    <div class="example-container" >
       <mat-form-field>
 
-        <input matInput placeholder="Name">
+        <input matInput  disabled placeholder="Name">
       </mat-form-field>
 
       <mat-form-field>
 
-        <input matInput type="number" placeholder="Phone">
+        <input matInput disabled type="number" placeholder="Phone">
       </mat-form-field>
       <mat-form-field>
-        <input matInput type="number" placeholder="Loyality Points">
+        <input matInput disabled type="number" placeholder="Loyality Points">
       </mat-form-field>
       <mat-form-field>
 
-        <input matInput placeholder="State">
-      </mat-form-field>
-
-      <mat-form-field>
-
-        <input matInput placeholder="City">
+        <input matInput disabled placeholder="State">
       </mat-form-field>
 
       <mat-form-field>
 
-        <input matInput placeholder="Address">
+        <input matInput disabled placeholder="City">
+      </mat-form-field>
+
+      <mat-form-field>
+
+        <input matInput  placeholder="Address">
       </mat-form-field>
 
 
@@ -39,9 +39,11 @@
   </mat-card-content>
   <mat-card-actions>
     <div>
-      <button mat-raised-button color="primary" (click)="openSnackBar()">Save</button>
+      <button mat-raised-button color="primary" (click)="openSnackBar()">{{btnText}}</button>
       <button mat-raised-button color="warn">Delete</button>
+      <button mat-raised-button class="redeembutton" routerLink="/redeem">Redeem</button>
       <button mat-raised-button color="basic" routerLink="/home">Cancel</button>
+      
     </div>
   </mat-card-actions>
 

@@ -1,9 +1,12 @@
 <div>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <mat-icon class="example-icon">home</mat-icon>
-      <span>LOYALTY POINTS </span>
-      <span class="example-spacer"></span>
+     
+      <mat-icon class="nav-icon" routerLink="/home" >home</mat-icon>
+    
+      <span class="nav-text" routerLink="/home" >LOYALTY POINTS </span>
+    
+      <span class="nav-spacer"></span>
       <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon>settings</mat-icon>
       </button>
@@ -15,7 +18,7 @@
         </button>
         <button mat-menu-item routerLink="/status">
           <mat-icon>update</mat-icon>
-          <span>Manage Status</span>
+          <span>Manage Class</span>
         </button>
       </mat-menu>
     </mat-toolbar-row>
